@@ -15,7 +15,29 @@ public class Student extends Human {
 	// ToDo 4: Add comments to your code
     
     private int GPA;
+    private int credits;
 
+    public Student(String name, short age, int credits) {
+        super(name, age);
+    }
+    
+    /**
+     * getter for credits field
+     * @return 
+     */
+    public int getCredits() {
+        return credits;
+    }
+    
+    /**
+     * sets the students number of credits
+     * @param credits 
+     */
+    public void setCredits(int credits) {
+        this.credits = credits;
+    }
+    
+  
     /**
      * getter for address field
      * @return address
