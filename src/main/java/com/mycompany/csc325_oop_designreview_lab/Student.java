@@ -10,6 +10,15 @@ package com.mycompany.csc325_oop_designreview_lab;
  * @author MoaathAlrajab
  */
 public class Student extends Human {
+
+    @Override
+    public String getAddress() {
+    }
+
+    @Override
+    public void setAddress(String address) {
+        
+    }
     
 	// ToDo 1: Make this class a child of Human
 	
