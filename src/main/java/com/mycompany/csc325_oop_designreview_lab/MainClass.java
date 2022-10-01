@@ -4,6 +4,8 @@
  */
 package com.mycompany.csc325_oop_designreview_lab;
 
+import java.util.Scanner;
+
 /**
  *
  * @author MoaathAlrajab
@@ -15,13 +17,14 @@ public class MainClass {
                 // ToDo 8: The senior class should have a minimum of 85 credits  
 		
 		Student std1 = new Freshman("James", 20, 12);// name, age, credits
-		 
-                
                 Student std2 = new Senior("John", 30, 90);
-		
-		// ToDo 11: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
-		
+                Scanner user = new Scanner(System.in);
+                double fGpa = user.nextInt();
+		double sGpa = user.nextInt();
+                
+                std1.setGPA(fGpa);
+                std2.setGPA(sGpa);
+                
 		System.out.println(std1);
                 
                 System.out.println(std2);
