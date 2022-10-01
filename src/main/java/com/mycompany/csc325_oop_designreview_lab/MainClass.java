@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.csc325_oop_designreview_lab;
 
 import java.util.Scanner;
@@ -25,15 +22,14 @@ public class MainClass {
                 std1.setGPA(fGpa);//sets freshmen GPA
                 std2.setGPA(sGpa);//sets Senior Gpa
                 
-		System.out.println("Freshman Student:\n" + std1.toString());//prints Freshman data
+		System.out.println("\nFreshman Student:\n" + std1.toString());//prints Freshman data
                 
                 if(std2.getCredits() < 85){
                     System.out.println("Student doesn't reach credit amount to be recognized as a Senior");
                 }else{
-                    System.out.println("Senior Student:\n" + std2.toString());//prints Senior data
+                    System.out.println("\nSenior Student:\n" + std2.toString());//prints Senior data
                 }
-                
-		// ToDo 13: submit using a pull request.
+              
 	}
 
 }
