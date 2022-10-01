@@ -19,8 +19,8 @@ public class MainClass {
 		Student std1 = new Freshman("James", 20, 12);// name, age, credits
                 Student std2 = new Senior("John", 30, 90);
                 Scanner user = new Scanner(System.in);
-                double fGpa = user.nextInt();
-		double sGpa = user.nextInt();
+                double fGpa = user.nextDouble();
+		double sGpa = user.nextDouble();
                 
                 std1.setGPA(fGpa);
                 std2.setGPA(sGpa);
