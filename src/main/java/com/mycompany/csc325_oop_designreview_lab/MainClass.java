@@ -14,7 +14,7 @@ public class MainClass {
 	
 	public static void main(String[] args) {
                 
-                // ToDo 8: The senior class should have a minimum of 85 credits  
+          
 		
 		Student std1 = new Freshman("James", 20, 12); //polymorphism using freshman with student
                 Student std2 = new Senior("John", 30, 90); //polymorphism using senior with student
@@ -25,9 +25,14 @@ public class MainClass {
                 std1.setGPA(fGpa);//sets freshmen GPA
                 std2.setGPA(sGpa);//sets Senior Gpa
                 
-		System.out.println(std1.toString());//prints Freshman data
-                System.out.println(std2.toString());//prints Senior data
-	
+		System.out.println("Freshman Student:\n" + std1.toString());//prints Freshman data
+                
+                if(std2.getCredits() < 85){
+                    System.out.println("Student doesn't reach credit amount to be recognized as a Senior");
+                }else{
+                    System.out.println("Senior Student:\n" + std2.toString());//prints Senior data
+                }
+                
 		// ToDo 13: submit using a pull request.
 	}
 
